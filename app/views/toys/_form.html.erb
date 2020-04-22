@@ -1,4 +1,5 @@
 <%= form_with(model: toy, local: true) do |form| %>
+  <!-- go through errors syntax -->
   <% if toy.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(toy.errors.count, "error") %> prohibited this toy from being saved:</h2>
